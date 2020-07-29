@@ -11,7 +11,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [10.x, 12.x, 14.x]
+        node-version: [10.x]
 
     steps:
     - uses: actions/checkout@v2
@@ -30,7 +30,7 @@ jobs:
       
     - name: Set enviroment for github-release
       run: |
-        echo ::set-env name=RELEASE_TAG::"v1.0.0"
+        echo "::set-env name=RELEASE_TAG::v0.0.${GITHUB_RUN_NUMBER}"
         echo ::set-env name=RELEASE_NAME::"$GITHUB_WORKFLOW"
 
     - uses: meeDamian/github-release@2.0
