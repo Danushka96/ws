@@ -1,0 +1,18 @@
+{
+  "name": "ws",
+  "version": "0.0.1",
+  "description": "",
+  "bin": "bin.js",
+  "main": "main.js",
+  "scripts": {
+    "run": "node bin.js -u echo.websocket.org -m test",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Danushka Herath",
+  "license": "MIT",
+  "dependencies": {
+    "ws": "^7.3.1",
+    "yargs": "^15.4.1"
+  }
+}

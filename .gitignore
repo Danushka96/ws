@@ -1,0 +1,6 @@
+node_modules
+ws-linux
+ws-macos
+ws-win.exe
+package-lock.json
+.idea
