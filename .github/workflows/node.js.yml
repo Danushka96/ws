@@ -31,7 +31,7 @@ jobs:
     - name: Set enviroment for github-release
       run: |
         echo "::set-env name=RELEASE_TAG::v0.0.${GITHUB_RUN_NUMBER}"
-        echo ::set-env name=RELEASE_NAME::"$GITHUB_WORKFLOW"
+        echo "::set-env name=RELEASE_NAME::v0.0.${GITHUB_RUN_NUMBER}"
 
     - uses: meeDamian/github-release@2.0
       with:
